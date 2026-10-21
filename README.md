@@ -171,7 +171,7 @@ npm run preview
 
 The preview command is for inspecting the build locally. Configure the deployed frontend origin on the backend before using authentication and admin APIs from that domain.
 
-## Troubleshooting
+<!-- ## Troubleshooting
 
 | Symptom | What to check |
 | --- | --- |
@@ -181,7 +181,7 @@ The preview command is for inspecting the build locally. Configure the deployed 
 | Data does not load | Inspect the browser Network panel for connection, CORS, or API errors. Confirm the backend allows your frontend origin. |
 | Notes do not open | Allow pop-ups for the admin panel and confirm that the backend returns an accessible `notesUrl`. |
 | Recording download does nothing or raises an error | The page's download handler is not connected yet; see current limitations above. |
-| Refreshing `/users` or another route returns a hosting 404 | Configure the static host's fallback to `index.html`. |
+| Refreshing `/users` or another route returns a hosting 404 | Configure the static host's fallback to `index.html`. | -->
 
 ## Development
 
