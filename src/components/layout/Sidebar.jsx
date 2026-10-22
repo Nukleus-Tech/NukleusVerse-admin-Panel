@@ -1,5 +1,4 @@
 import {
-  BarChart3,
   CalendarDays,
   FileText,
   LayoutDashboard,
@@ -10,6 +9,7 @@ import {
   LogOut,
 } from "lucide-react";
 import { NavLink, useNavigate } from "react-router-dom";
+import nukleusLogo from "../../assets/nukleus-logo.png";
 import useAuth from "../../hooks/useAuth";
 
 const navItems = [
@@ -34,9 +34,13 @@ function Sidebar() {
   return (
     <aside className="flex min-h-screen w-64 shrink-0 flex-col border-r border-slate-800 bg-slate-950 px-4 py-5 text-white">
       <div className="mb-8 flex items-center gap-3 px-2">
-        <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-violet-600 shadow-sm shadow-violet-950/40">
-          <BarChart3 size={20} />
-        </div>
+        <img
+          src={nukleusLogo}
+          alt="Nukleus logo"
+          width={40}
+          height={40}
+          className="h-10 w-10 shrink-0 object-contain"
+        />
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide text-violet-200">
             NukleusVerse
