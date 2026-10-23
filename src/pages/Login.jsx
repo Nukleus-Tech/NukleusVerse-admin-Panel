@@ -1,6 +1,7 @@
-import { LockKeyhole, LogIn, Mail, ShieldCheck } from "lucide-react";
+import { LockKeyhole, LogIn, Mail } from "lucide-react";
 import { useState } from "react";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
+import nukleusLogo from "../assets/nukleus-logo.png";
 import useAuth from "../hooks/useAuth";
 
 function Login() {
@@ -40,9 +41,13 @@ function Login() {
     <main className="flex min-h-screen bg-slate-100">
       <section className="hidden min-h-screen w-[44%] flex-col justify-between bg-slate-950 p-10 text-white lg:flex">
         <div className="flex items-center gap-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-violet-600">
-            <ShieldCheck size={22} />
-          </div>
+          <img
+            src={nukleusLogo}
+            alt="Nukleus logo"
+            width={44}
+            height={44}
+            className="h-11 w-11 shrink-0 object-contain"
+          />
           <div>
             <p className="text-xs font-semibold uppercase tracking-wide text-violet-200">
               NukleusVerse
